@@ -11,5 +11,12 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/js/app.js', 'public/js')
-    .sass('resources/sass/app.scss', 'public/css');
+// mix.js('resources/js/app.js', 'public/js')
+//     .sass('resources/sass/app.scss', 'public/css');
+
+mix.browserSync('vuwsplash.test')
+    .js('resources/js/app.js', 'public/js')
+    .sass('resources/sass/app.scss', 'public/css')
+    // ブラウザがキャッシュを読み込まないようにするため.
+    // More info. https://readouble.com/laravel/5.7/ja/mix.html
+    .version()

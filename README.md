@@ -43,5 +43,9 @@ http://localhost
 
 
 ## Database
-+ docker-compose exec db mysql -uroot -ppassword
-+ create database laravel default character set utf8;
+1. docker-compose exec db mysql -uroot -ppassword
+2. create database laravel default character set utf8;
+
+
+## Vue
+1. docker-compose exec app npm install
