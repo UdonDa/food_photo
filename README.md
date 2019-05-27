@@ -49,3 +49,4 @@ http://localhost
 
 ## Vue
 1. docker-compose exec app npm install
+2. dc exec app npm run watch
