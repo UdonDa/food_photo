@@ -40,3 +40,8 @@ $ docker-compose exec app laravel new
 ## Access Laravel App
 
 http://localhost
+
+
+## Database
++ docker-compose exec db mysql -uroot -ppassword
++ create database laravel default character set utf8;
