@@ -1,4 +1,6 @@
 import Vue from 'vue'
+import router from './router'
+import App from './App.vue'
 
 /**
  * First we will load all of this project's JavaScript dependencies which
@@ -31,5 +33,7 @@ Vue.component('example-component', require('./components/ExampleComponent.vue').
 
 const app = new Vue({
     el: '#app',
-    template: '<h1>hello!!!!!</h1>'
+    router,
+    components: {App},
+    template: '<App />'
 });
